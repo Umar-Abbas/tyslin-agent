@@ -1,13 +1,10 @@
-[project]
+[tool.poetry]
 name = "adk-short-bot"
 version = "0.1.0"
 description = "A bot that shortens your messages"
-authors = [
-    {name = "Brandon Hancock", email = "brandon@brandonhancock.io"}
-]
+authors = ["umar-Abbas <umar@example.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-license = "Apache License 2.0"
+packages = [{include = "adk_short_bot"}]
 
 [tool.poetry.dependencies]
 python = ">=3.12"
@@ -26,7 +23,7 @@ deploy-remote = "deployment.remote:main"
 cleanup = "deployment.cleanup:cleanup_deployment"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
  
